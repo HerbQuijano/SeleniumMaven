@@ -12,11 +12,18 @@ public class DynamicDropdown {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXTaction")).click();
-        driver.findElement(By.xpath("//a[@value='BLR']")).click();
-        //ctl00_mainContent_ddl_destinationStation1_CTXT
+
+        //driver.findElement(By.xpath("//a[@value='BLR']")).click();
+        //other way
+        driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']\n")).click();
+
         Thread.sleep(2000);
-        //driver.findElement(By.id("ctl00_mainContent_ddl_destinationStation1_CTXT")).click();
-        driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+
+        //driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+        //other way
+        driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+
+        driver.findElement(By.xpath("ctl00_mainContent_ddl_originStation1_CTNR"));
         //a[@value='MAA'])[2] explicitly indicates second index, second element found
         //a[@value='MAA']
         //a[@value='BLR']
