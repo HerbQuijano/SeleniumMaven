@@ -3,6 +3,7 @@ package day1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//TestNG is one of the testing frameworks that uses selenium
 
 public class UpdatedDropdown {
     public static void main(String[] args) throws InterruptedException {
