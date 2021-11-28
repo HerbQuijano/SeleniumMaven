@@ -1,4 +1,4 @@
-package day1;
+package JavaCourse;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
