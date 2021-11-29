@@ -27,16 +27,5 @@ public class WindowHandles {
         //String email = driver.findElement(By.xpath("//p[@class='im-para red'] //strong")).getText();
 
 
-
-
-
-
-
-
-
-        //a[class='blinkingText']
-
-
-
     }
 }
