@@ -25,7 +25,9 @@ public class WindowHandles {
 //        System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
         String emailPara = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
         //String email = driver.findElement(By.xpath("//p[@class='im-para red'] //strong")).getText();
+        driver.switchTo().window(parentID);
+        driver.findElement(By.id("username")).sendKeys(emailPara);
 
-
+        driver.quit();
     }
 }
