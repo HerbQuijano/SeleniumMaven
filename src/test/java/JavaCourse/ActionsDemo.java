@@ -16,10 +16,12 @@ public class ActionsDemo {
         WebElement loginB = driver.findElement(By.cssSelector("a[id='nav-link-accountList']"));
         WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 
-        Actions a = new Actions(driver ); //Actions definition
+        Actions a = new Actions(driver); //Actions definition
         //a.moveToElement(driver.findElement(By.cssSelector("a[id='nav-link-accountList']"))).build().perform(); //build prepares, perform executes
         a.moveToElement(searchBox).click().keyDown(Keys.SHIFT).sendKeys("this is a test").build().perform(); //composite action
         //a.moveToElement(loginB).click().build().perform(); //using composite action
+
+
 
 
     }
