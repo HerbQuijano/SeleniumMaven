@@ -135,7 +135,7 @@ public class StreamsExample {
         System.out.println(ls.get(0));
 
         //
-        List<Integer> values = Arrays.asList(3,2,2,7,5,1,9,7);
+        List<Integer> values = Arrays.asList(3, 2, 2, 7, 5, 1, 9, 7);
         //print unique members of list
         //sort the array - 3rd index
         //values.stream().distinct().limit(1).forEach(s -> System.out.println(s));
