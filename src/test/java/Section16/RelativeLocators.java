@@ -1,4 +1,4 @@
-package Section15;
+package Section16;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
