@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PDL Loan">
+    <test name="Void payment">
+        <classes>
+            <class name="Section14.StreamsExample">
+                <methods>
+                    <include name="MyStreamCollect"/>
+                </methods>
+            </class>
+            <class name="TestNGTutorial.TestDay1">
+                <methods>
+                    <include name="TestLogin"/>
+                    <include name="SecondTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
