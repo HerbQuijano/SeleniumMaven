@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 public class TestDay1 {
 
     @Test
-    public static void TestLogin() {
+    public void TestLogin() {
         System.out.println("TestLogin");
 
     }
 
     @Test
-    public static void SecondTest() {
+    public void SecondTest() {
         System.out.println("SecondTest");
     }
 
