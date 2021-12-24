@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/drako/IdeaProjects/SeleniumMaven"><classes><class name="Section14.StreamsExample"><methods><include name="MyStreamCollect"/></methods></class><class name="TestNGTutorial2.TestLogins"><methods><include name="WebLogin"/><include name="MobileLogin"/><include name="LoginAPICarLoan"/></methods></class><class name="TestNGTutorial2.TestOLPDL"><methods><include name="TestOLPDLACHEPM"/><include name="TestOLPDLDCEPM"/></methods></class><class name="TestNGTutorial.TestDay1"><methods><include name="TestLogin"/><include name="SecondTest"/></methods></class><class name="TestNGTutorial.TestDay2"><methods><include name="ILPLoan"/><include name="HomeLoan"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Loans">
+    <test name="C:/Users/drako/IdeaProjects/SeleniumMaven">
+        <classes>
+            <class name="TestNGTutorial2.TestCarLoan">
+                <methods>
+                    <include name="MobileLoginCarLoan"/>
+
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+    <test name="Car Loans">
+        <classes>
+
+            <class name="TestNGTutorial2.TestHomeLoan">
+                <methods>
+                    <!-- <include name="RestAPILoginHomeLoan"/> -->
+                    <exclude name="Mobile.*"/>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
