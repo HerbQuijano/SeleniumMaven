@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Personal Loans">
+    <test name="Car Loans">
+        <classes>
+            <class name="TestNGTutorial2.TestCarLoan">
+                <methods>
+                    <include name="MobileLoginCarLoan"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Home Loans">
+        <classes>
+
+            <class name="TestNGTutorial2.TestHomeLoan">
+                <methods>
+                    <!-- <include name="RestAPILoginHomeLoan"/> -->
+                    <exclude name="ToBe.*"/>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

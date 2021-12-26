@@ -14,8 +14,8 @@ public class TestLogins {
         System.out.println("Appium Login");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void LoginAPICarLoan() {
-        System.out.println("REST API Login");
+        System.out.println("REST API Login (Smoke group)");
     }
 }

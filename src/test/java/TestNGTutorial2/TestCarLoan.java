@@ -39,8 +39,24 @@ public class TestCarLoan {
         System.out.println("Rest API Login to CarLoan");
     }
 
+    @Test(groups = {"Smoke"})
+    public void TestGroup1() {
+        System.out.println("Test Group Smoke 1");
+    }
+
+    @Test(groups = {"Smoke"})
+    public void TestGroup2() {
+        System.out.println("Test Group Smoke 2");
+    }
+
+    @Test(groups = {"Smoke"})
+    public void TestGroup3() {
+        System.out.println("Test Group Smoke 3");
+    }
+
     @Test
     public void MobileLoginCarLoan() {
-        System.out.println("(included) Mobile Login to CarLoan");
+        System.out.println("(included) Mobile Login to " +
+                "CarLoan");
     }
 }

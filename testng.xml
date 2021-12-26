@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Personal Loans">
-    <test name="Car Loans">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Daily Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
         <classes>
-            <class name="TestNGTutorial2.TestCarLoan">
-                <methods>
-                    <include name="MobileLoginCarLoan"/>
-
-                </methods>
-            </class>
+            <class name="TestNGTutorial2.TestCarLoan"/>
+            <class name="TestNGTutorial2.TestHomeLoan"/>
+            <class name="TestNGTutorial2.TestLogins"/>
         </classes>
-    </test>
-    <test name="Home Loans">
-        <classes>
 
-            <class name="TestNGTutorial2.TestHomeLoan">
-                <methods>
-                    <!-- <include name="RestAPILoginHomeLoan"/> -->
-                    <exclude name="ToBe.*"/>
-
-                </methods>
-            </class>
-
-        </classes>
     </test>
 </suite>

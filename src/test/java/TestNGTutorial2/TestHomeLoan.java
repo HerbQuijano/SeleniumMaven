@@ -21,9 +21,9 @@ public class TestHomeLoan {
         System.out.println("Tear down (Class)");
     }
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void MobileViewActiveHomeLoan() {
-        System.out.println(" (3) Mobile View to Home Loan");
+        System.out.println(" (3) Mobile View to Home Loan (Smoke group)");
     }
 
     @Test
