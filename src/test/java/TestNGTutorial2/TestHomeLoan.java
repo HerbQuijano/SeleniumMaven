@@ -1,9 +1,6 @@
 package TestNGTutorial2;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class TestHomeLoan {
     @Test
@@ -26,15 +23,17 @@ public class TestHomeLoan {
         System.out.println(" (3) Mobile View to Home Loan (Smoke group)");
     }
 
+    @Parameters({"username", "password"})
     @Test
-    public void MobileLoginHomeLoan() {
-        System.out.println("(1) Mobile Login to Home Loan");
+    public void MobileLoginHomeLoan(String username, String password) {
+        System.out.println("(1) Mobile Login to Home Loan " + username + " " + password);
     }
 
     @Test
     public void RestAPILoginHomeLoan() {
         System.out.println("(4) Rest API Login to Home Loan");
     }
+
 
     @AfterSuite
     public void tearDownSuite() {

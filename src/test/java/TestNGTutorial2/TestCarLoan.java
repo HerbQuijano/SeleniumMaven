@@ -34,9 +34,11 @@ public class TestCarLoan {
         System.out.println("Tearing down Method");
     }
 
+    @Parameters({"LOANS URL", "API/key username"})
     @Test
-    public void RestAPILoginCarLoan() {
-        System.out.println("Rest API Login to CarLoan");
+    public void RestAPILoginCarLoan(String urlName, String key) {
+        System.out.println("Rest API Login to CarLoan " + urlName + " " + key);
+
     }
 
     @Test(groups = {"Smoke"})
@@ -54,9 +56,24 @@ public class TestCarLoan {
         System.out.println("Test Group Smoke 3");
     }
 
+    @Parameters({"LOANS URL"})
     @Test
-    public void MobileLoginCarLoan() {
-        System.out.println("(included) Mobile Login to " +
-                "CarLoan");
+    public void MobileLoginCarLoan(String urlName) {
+        System.out.println("(included) Mobile Login to CarLoan " + urlName);
+    }
+
+    @Test(enabled = false)
+    public void EnabledDisabledTest() {
+        System.out.println("Enabled/Disabled Test");
+    }
+
+    @Test
+    public void zDependenceTestFirst() {
+        System.out.println("Dependence Test Dependable");
+    }
+
+    @Test //(dependsOnMethods = {"zDependenceTestFirst"})
+    public void aDependenceTestSecond() {
+        System.out.println("Dependence Test Dependant");
     }
 }
