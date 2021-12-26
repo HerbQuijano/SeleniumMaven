@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Daily Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+                <!-- <exclude name="Smoke"/> -->
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestNGTutorial2.TestCarLoan"/>
+            <class name="TestNGTutorial2.TestHomeLoan"/>
+            <class name="TestNGTutorial2.TestLogins"/>
+        </classes>
+
+    </test>
+</suite>

@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="Daily Regression">
+    <parameter name="LOANS URL" value="qaclickacademy.com"/>
+    <parameter name="API/key username" value="hquijano"/>
+
+
+    <test verbose="2" preserve-order="true"
+          name="Car Loans">
         <groups>
             <run>
                 <include name="Smoke"/>
             </run>
         </groups>
-
         <classes>
-            <class name="TestNGTutorial2.TestCarLoan"/>
-            <class name="TestNGTutorial2.TestHomeLoan"/>
-            <class name="TestNGTutorial2.TestLogins"/>
+            <class name="TestNGTutorial2.TestCarLoan">
+                <methods>
+                    <include name="setUpSuite"/>
+                    <include name="WebLoginCarLoan"/>
+                    <include name="RestAPILoginCarLoan"/>
+                    <include name="MobileLoginCarLoan"/>
+                    <include name="EnabledDisabledTest"/>
+                    <include name="zDependenceTestFirst"/>
+                </methods>
+            </class>
         </classes>
+    </test>
 
+    <test verbose="2" preserve-order="true"
+          name="Home Loans">
+        <parameter name="username" value="hquijano"/>
+        <parameter name="password" value="mobileLogin"/>
+        <classes>
+            <class name="TestNGTutorial2.TestHomeLoan">
+                <methods>
+                    <include name="WebLoginHomeLoan"/>
+                    <include name="MobileSignInHomeLoan"/>
+                    <include name="MobileLoginHomeLoan"/>
+                    <include name="RestAPILoginHomeLoan"/>
+                    <exclude name="ToBe.*"/>
+
+                </methods>
+            </class>
+            <class name="TestNGTutorial2.TestLogins">
+                <methods>
+                    <include name="WebLogin"/>
+                    <include name="MobileLogin"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>
