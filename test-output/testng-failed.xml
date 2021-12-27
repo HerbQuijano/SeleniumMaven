@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="API/key username" value="hquijano"/>
+  <parameter name="LOANS URL" value="qaclickacademy.com"/>
+  <listeners>
+    <listener class-name="TestNGTutorial2.Listeners"/>
+  </listeners>
+  <test thread-count="6" parallel="tests" name="Home Loans(failed)">
+    <parameter name="password" value="mobileLogin"/>
+    <parameter name="username" value="hquijano"/>
+    <classes>
+      <class name="TestNGTutorial2.TestHomeLoan">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="WebLoginHomeLoan"/>
+          <include name="tearDownClass"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestNGTutorial2.TestHomeLoan -->
+    </classes>
+  </test> <!-- Home Loans(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

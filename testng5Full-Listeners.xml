@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests" thread-count="6">
-
+<suite name="All Test Suite">
     <parameter name="LOANS URL" value="qaclickacademy.com"/> <!-- Parameterization -->
     <parameter name="API/key username" value="hquijano"/>
     <listeners>
@@ -9,7 +8,7 @@
     </listeners>
 
     <test verbose="2" preserve-order="true"
-          name="Car Loans" parallel="classes" thread-count="2">
+          name="Car Loans">
         <groups> <!--- Groups -->
             <run>
                 <include name="Smoke"/>

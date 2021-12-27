@@ -1,11 +1,13 @@
 package TestNGTutorial2;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestHomeLoan {
     @Test
     public void WebLoginHomeLoan() {
         System.out.println(" (5) Web Login to Home Loan");
+        Assert.assertTrue(false);
     }
 
     @Test
@@ -29,11 +31,10 @@ public class TestHomeLoan {
         System.out.println("(1) Mobile Login to Home Loan " + username + " " + password);
     }
 
-    @Test
-    public void RestAPILoginHomeLoan() {
-        System.out.println("(4) Rest API Login to Home Loan");
+    @Test(dataProvider = "getData") // calling dataprovider method
+    public void RestAPILoginHomeLoan(String username, String password) {
+        System.out.println("(4) Rest API Login to Home Loan " + username + " " + password);
     }
-
 
     @AfterSuite
     public void tearDownSuite() {
@@ -50,8 +51,27 @@ public class TestHomeLoan {
         System.out.println("To be excluded one");
     }
 
-    @Test
+    @Test(timeOut = 4000)  // timeOut annotation is used to specify the time out for the test
     public void ToBeExcludedTwo() {
         System.out.println("To be excluded two");
     }
+
+    @DataProvider // DataProvider annotation is used to provide the test data from the specified method
+    public Object[][] getData() {
+        //1st combination - username, password - good credit history
+        //2nd combination - username, password - no credit history
+        //3rd combination - fraud
+        Object[][] data = new Object[3][2];
+        data[0][0] = "firstUsername";
+        data[0][1] = "password";
+
+        data[1][0] = "secondUsername";
+        data[1][1] = "secondPassword";
+
+        data[2][0] = "thirdUsername";
+        data[2][1] = "thirdPassword";
+
+        return data;
+    }
+
 }

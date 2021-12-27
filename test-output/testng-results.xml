@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="9" total="21" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-26T18:19:02 CST" name="All Test Suite" finished-at="2021-12-26T18:19:02 CST" duration-ms="70">
+    <groups>
+    </groups>
+    <test started-at="2021-12-26T18:19:02 CST" name="Home Loans" finished-at="2021-12-26T18:19:02 CST" duration-ms="70">
+      <class name="TestNGTutorial2.TestHomeLoan">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="setUp" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="WebLoginHomeLoan()[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="WebLoginHomeLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="30" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at TestNGTutorial2.TestHomeLoan.WebLoginHomeLoan(TestHomeLoan.java:10)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+        <test-method signature="MobileSignInHomeLoan()[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="MobileSignInHomeLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileSignInHomeLoan -->
+        <test-method signature="MobileLoginHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="MobileLoginHomeLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hquijano]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mobileLogin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginHomeLoan -->
+        <test-method signature="RestAPILoginHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="RestAPILoginHomeLoan" data-provider="getData" finished-at="2021-12-26T18:19:02 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPILoginHomeLoan -->
+        <test-method signature="RestAPILoginHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="RestAPILoginHomeLoan" data-provider="getData" finished-at="2021-12-26T18:19:02 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPILoginHomeLoan -->
+        <test-method signature="RestAPILoginHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="RestAPILoginHomeLoan" data-provider="getData" finished-at="2021-12-26T18:19:02 CST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPILoginHomeLoan -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="tearDownClass" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:TestNGTutorial2.TestHomeLoan@63a65a25]" started-at="2021-12-26T18:19:02 CST" name="tearDownSuite" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- TestNGTutorial2.TestHomeLoan -->
+      <class name="TestNGTutorial2.TestCarLoan">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:TestNGTutorial2.TestCarLoan@7fc229ab]" started-at="2021-12-26T18:19:02 CST" name="setUpSuite" finished-at="2021-12-26T18:19:02 CST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+      </class> <!-- TestNGTutorial2.TestCarLoan -->
+      <class name="TestNGTutorial2.TestLogins">
+        <test-method signature="WebLogin()[pri:0, instance:TestNGTutorial2.TestLogins@54c562f7]" started-at="2021-12-26T18:19:02 CST" name="WebLogin" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogin -->
+        <test-method signature="MobileLogin()[pri:0, instance:TestNGTutorial2.TestLogins@54c562f7]" started-at="2021-12-26T18:19:02 CST" name="MobileLogin" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogin -->
+      </class> <!-- TestNGTutorial2.TestLogins -->
+    </test> <!-- Home Loans -->
+    <test started-at="2021-12-26T18:19:02 CST" name="Car Loans" finished-at="2021-12-26T18:19:02 CST" duration-ms="32">
+      <class name="TestNGTutorial2.TestCarLoan">
+        <test-method signature="WebLoginCarLoan()[pri:0, instance:TestNGTutorial2.TestCarLoan@7fc229ab]" started-at="2021-12-26T18:19:02 CST" name="WebLoginCarLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method signature="RestAPILoginCarLoan(java.lang.String,java.lang.String)[pri:0, instance:TestNGTutorial2.TestCarLoan@7fc229ab]" started-at="2021-12-26T18:19:02 CST" name="RestAPILoginCarLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaclickacademy.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hquijano]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPILoginCarLoan -->
+        <test-method signature="MobileLoginCarLoan(java.lang.String)[pri:0, instance:TestNGTutorial2.TestCarLoan@7fc229ab]" started-at="2021-12-26T18:19:02 CST" name="MobileLoginCarLoan" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaclickacademy.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method signature="zDependenceTestFirst()[pri:0, instance:TestNGTutorial2.TestCarLoan@7fc229ab]" started-at="2021-12-26T18:19:02 CST" name="zDependenceTestFirst" finished-at="2021-12-26T18:19:02 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zDependenceTestFirst -->
+      </class> <!-- TestNGTutorial2.TestCarLoan -->
+    </test> <!-- Car Loans -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
